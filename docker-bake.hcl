@@ -51,7 +51,6 @@ target "17-jre" {
     }
 }
 
-
 // Special target: https://github.com/docker/metadata-action#bake-definition
 target "docker-metadata-action" {
     platforms = [
