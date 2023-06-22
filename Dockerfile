@@ -1,8 +1,7 @@
 ARG JAVA_VERSION
 FROM eclipse-temurin:${JAVA_VERSION}-alpine
 
-ARG TOMCAT_MAJOR=10
-ARG TOMCAT_VERSION=10.1.8
+ARG TOMCAT_VERSION
 
 ENV TOMCAT_HOME=/opt/tomcat \
     CATALINA_HOME=/opt/tomcat \
@@ -10,7 +9,7 @@ ENV TOMCAT_HOME=/opt/tomcat \
 
 RUN apk upgrade --update && \
     apk add --update curl && \
-    curl -jksSL -o /tmp/apache-tomcat.tar.gz http://archive.apache.org/dist/tomcat/tomcat-${TOMCAT_MAJOR}/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz && \
+    curl -jksSL -o /tmp/apache-tomcat.tar.gz http://archive.apache.org/dist/tomcat/tomcat-${TOMCAT_VERSION:0:2}/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz && \
     gunzip /tmp/apache-tomcat.tar.gz && \
     tar -C /opt -xf /tmp/apache-tomcat.tar && \
     ln -s /opt/apache-tomcat-${TOMCAT_VERSION} ${TOMCAT_HOME} && \

@@ -1,3 +1,7 @@
+variable "TOMCAT_VERSION" {
+    default = "10.1.8"
+}
+
 group "all" {
     targets = ["11-jre", "11-jre","17-jre","17-jdk","20-jre","20-jdk"]
 }
@@ -15,8 +19,8 @@ group "release" {
 
 target "11-jre" {
     tags = [
-        "cyb3rjak3/alpine-tomcat:11-jre",
-        "ghcr.io/cyb3r-jak3/alpine-tomcat:11-jre",
+        "cyb3rjak3/alpine-tomcat:11-jre-${TOMCAT_VERSION}",
+        "ghcr.io/cyb3r-jak3/alpine-tomcat:11-jre-${TOMCAT_VERSION}",
     ]
     args = {
         JAVA_VERSION = "11-jre"
@@ -25,8 +29,8 @@ target "11-jre" {
 
 target "11-jdk" {
     tags = [
-        "cyb3rjak3/alpine-tomcat:11-jdk",
-        "ghcr.io/cyb3r-jak3/alpine-tomcat:11-jdk",
+        "cyb3rjak3/alpine-tomcat:11-jdk-${TOMCAT_VERSION}",
+        "ghcr.io/cyb3r-jak3/alpine-tomcat:11-jdk-${TOMCAT_VERSION}",
     ]
     args = {
         JAVA_VERSION = "11-jdk"
@@ -35,8 +39,8 @@ target "11-jdk" {
 
 target "17-jre" {
     tags = [
-        "cyb3rjak3/alpine-tomcat:17-jre",
-        "ghcr.io/cyb3r-jak3/alpine-tomcat:17-jre",
+        "cyb3rjak3/alpine-tomcat:17-jre-${TOMCAT_VERSION}",
+        "ghcr.io/cyb3r-jak3/alpine-tomcat:17-jre-${TOMCAT_VERSION}",
     ]
     args = {
         JAVA_VERSION = "17-jre"
@@ -45,8 +49,8 @@ target "17-jre" {
 
 target "17-jdk" {
     tags = [
-        "cyb3rjak3/alpine-tomcat:17-jdk",
-        "ghcr.io/cyb3r-jak3/alpine-tomcat:17-jdk",
+        "cyb3rjak3/alpine-tomcat:17-jdk-${TOMCAT_VERSION}",
+        "ghcr.io/cyb3r-jak3/alpine-tomcat:17-jdk-${TOMCAT_VERSION}",
     ]
     args = {
         JAVA_VERSION = "17-jdk"
@@ -55,8 +59,8 @@ target "17-jdk" {
 
 target "20-jre" {
     tags = [
-        "cyb3rjak3/alpine-tomcat:20-jre",
-        "ghcr.io/cyb3r-jak3/alpine-tomcat:20-jre",
+        "cyb3rjak3/alpine-tomcat:20-jre-${TOMCAT_VERSION}",
+        "ghcr.io/cyb3r-jak3/alpine-tomcat:20-jre-${TOMCAT_VERSION}",
     ]
     args = {
         JAVA_VERSION = "20-jre"
@@ -65,8 +69,8 @@ target "20-jre" {
 
 target "20-jdk" {
     tags = [
-        "cyb3rjak3/alpine-tomcat:20-jdk",
-        "ghcr.io/cyb3r-jak3/alpine-tomcat:20-jdk",
+        "cyb3rjak3/alpine-tomcat:20-jdk-${TOMCAT_VERSION}",
+        "ghcr.io/cyb3r-jak3/alpine-tomcat:20-jdk-${TOMCAT_VERSION}",
     ]
     args = {
         JAVA_VERSION = "20-jdk"
