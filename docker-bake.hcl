@@ -24,6 +24,7 @@ target "11-jre" {
     ]
     args = {
         JAVA_VERSION = "11-jre"
+        TOMCAT_VERSION = TOMCAT_VERSION
     }
 }
 
@@ -34,6 +35,7 @@ target "11-jdk" {
     ]
     args = {
         JAVA_VERSION = "11-jdk"
+        TOMCAT_VERSION = TOMCAT_VERSION
     }
 }
 
@@ -44,6 +46,7 @@ target "17-jre" {
     ]
     args = {
         JAVA_VERSION = "17-jre"
+        TOMCAT_VERSION = TOMCAT_VERSION
     }
 }
 
@@ -54,6 +57,7 @@ target "17-jdk" {
     ]
     args = {
         JAVA_VERSION = "17-jdk"
+        TOMCAT_VERSION = TOMCAT_VERSION
     }
 }
 
@@ -64,6 +68,7 @@ target "20-jre" {
     ]
     args = {
         JAVA_VERSION = "20-jre"
+        TOMCAT_VERSION = TOMCAT_VERSION
     }
 }
 
@@ -74,6 +79,7 @@ target "20-jdk" {
     ]
     args = {
         JAVA_VERSION = "20-jdk"
+        TOMCAT_VERSION = TOMCAT_VERSION
     }
 }
 
