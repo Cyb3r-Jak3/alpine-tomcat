@@ -83,3 +83,4 @@ jobs:
         with:
           username: ${{ env.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: cyb3rjak3/alpine-tomcat
