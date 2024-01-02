@@ -1,5 +1,5 @@
 variable "TOMCAT_VERSION" {
-    default = "10.1.8"
+    default = "10.1.9"
 }
 
 group "all" {
@@ -87,6 +87,7 @@ target "20-jdk" {
 target "docker-metadata-action" {
     platforms = [
         "linux/amd64",
+        "linux/arm64",
     ]
 }
 target "11-jre-release" {

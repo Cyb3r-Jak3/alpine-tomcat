@@ -10,11 +10,11 @@ Version tag is template of `<JAVA_VERSION>-<JAVA_RUNTIME>-<TOMCAT_VERSION>` wher
 
 The following matrix shows the currently supported versions.
 
-| Java Version | Java Runtime | Tomcat Version | Tag |
-| ------------ | ------------ | -------------- | --- |
-| 11           | jdk          | 10.1.8         | 11-jdk-10.1.8 |
-| 11           | jre          | 10.1.8         | 11-jre-10.1.8 |
-| 17           | jdk          | 10.1.8         | 17-jdk-10.1.8 |
-| 17           | jre          | 10.1.8         | 17-jre-10.1.8 |
-| 20           | jdk          | 10.1.8         | 20-jdk-10.1.8 |
-| 20           | jre          | 10.1.8         | 20-jre-10.1.8 |
+| Java Version | Java Runtime | Tomcat Version |
+| ------------ | ------------ | -------------- |
+| 11           | jdk          | 10.1.8, 10.1.9 |
+| 11           | jre          | 10.1.8, 10.1.9 |
+| 17           | jdk          | 10.1.8, 10.1.9 |
+| 17           | jre          | 10.1.8, 10.1.9 |
+| 20           | jdk          | 10.1.8, 10.1.9 |
+| 20           | jre          | 10.1.8, 10.1.9 |
