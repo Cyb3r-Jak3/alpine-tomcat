@@ -8,13 +8,6 @@ Image is available on [Docker Hub](https://hub.docker.com/r/robertdebock/alpine-
 
 Version tag is template of `<JAVA_VERSION>-<JAVA_RUNTIME>-<TOMCAT_VERSION>` where `JAVA_VERSION` is the version of Java, `JAVA_RUNTIME` is the runtime used (either `jre` or `jdk`) and `TOMCAT_VERSION` is the version of Tomcat.
 
-The following matrix shows the currently supported versions.
-
-| Java Version | Java Runtime | Tomcat Version |
-| ------------ | ------------ | -------------- |
-| 11           | jdk          | 10.1.8, 10.1.9 |
-| 11           | jre          | 10.1.8, 10.1.9 |
-| 17           | jdk          | 10.1.8, 10.1.9 |
-| 17           | jre          | 10.1.8, 10.1.9 |
-| 20           | jdk          | 10.1.8, 10.1.9 |
-| 20           | jre          | 10.1.8, 10.1.9 |
+Java Version: 11, 17, 20
+Java Runtime: jdk, jre
+Tomcat Version: 10.1.8, 10.1.9, 10.1.10
