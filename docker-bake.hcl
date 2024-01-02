@@ -87,7 +87,6 @@ target "20-jdk" {
 target "docker-metadata-action" {
     platforms = [
         "linux/amd64",
-        "linux/arm64",
     ]
 }
 target "11-jre-release" {
