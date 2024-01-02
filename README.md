@@ -10,4 +10,4 @@ Version tag is template of `<JAVA_VERSION>-<JAVA_RUNTIME>-<TOMCAT_VERSION>` wher
 
 Java Version: 11, 17, 20
 Java Runtime: jdk, jre
-Tomcat Version: 10.1.8 - 10.1.15
+Tomcat Version: 10.1.8 - 10.1.16

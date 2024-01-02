@@ -1,5 +1,5 @@
 variable "TOMCAT_VERSION" {
-    default = "10.1.15"
+    default = "10.1.16"
 }
 
 group "all" {
