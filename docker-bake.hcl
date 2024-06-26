@@ -1,4 +1,5 @@
 variable "TOMCAT_VERSION" {
+    # renovate: datasource=github-tags depName=apache/tomcat versioning=semver
     default = "10.1.17"
 }
 
