@@ -10,7 +10,7 @@
         "customType": "regex",
         "fileMatch": ["^docker-bake.hcl$"],
         "matchStrings": ["datasource=(?<datasource>.*?) depName=(?<depName>apache\/tomcat)\ndefault = \"(?<currentValue>.*)\""],
-        "autoReplaceStringTemplate": "\"{{{newValue}}}\""
+        "replaceString": "datasource=${datasource} depName=${depName}\ndefault = \"${currentValue}\""
       }
     ]
 }
