@@ -9,7 +9,7 @@
       {
         "customType": "regex",
         "fileMatch": ["^docker-bake.hcl$"],
-        "matchStrings": ["datasource=(?<datasource>.*?)\n.*=\\s\"(?<currentValue>.*)\""]
+        "matchStrings": ["datasource=(?<datasource>.*?) depName=(?<depName>apache\/tomcat)\n.*=\\s\"(?<currentValue>.*)\""]
       }
   ],
   "customDatasources": {
