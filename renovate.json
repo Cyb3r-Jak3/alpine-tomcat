@@ -9,7 +9,19 @@
       {
         "customType": "regex",
         "fileMatch": ["^docker-bake.hcl$"],
-        "matchStrings": ["datasource=(?<datasource>.*?) depName=(?<depName>apache\/tomcat)\n.*=\\s\"(?<currentValue>.*)\""]
+        "matchStrings": ["datasource=(?<datasource>.*?)\n.*=\\s\"(?<currentValue>.*)\""]
       }
-    ]
+  ],
+  "customDatasources": {
+    "tomcat": {
+      "defaultRegistryUrlTemplate": "https://dlcdn.apache.org/tomcat/tomcat-10/",
+      "format": "html"
+    }
+  },
+  "packageRules": [
+    {
+      "matchDatasources": ["tomcat"],
+      "extractVersion": "v(?<version>\\d+\\.\\d+\\.\\d+)"
+    }
+  ]
 }
