@@ -1,5 +1,5 @@
 variable "TOMCAT_VERSION" {
-    # renovate: datasource=github-tags depName=apache/tomcat
+    # renovate: datasource=tomcat depName=apache/tomcat
     default = "10.1.25"
 }
 
