@@ -1,8 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended",
-    ":disableDependencyDashboard"
+    "config:recommended"
   ],
 
   "customManagers": [
@@ -20,7 +19,7 @@
   },
   "packageRules": [
     {
-      "matchDatasources": ["tomcat"],
+      "matchDatasources": ["custom.tomcat"],
       "extractVersion": "v(?<version>\\d+\\.\\d+\\.\\d+)"
     }
   ]
